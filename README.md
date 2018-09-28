@@ -1,8 +1,4 @@
-[![][KurentoImage]][Kurento]
-
-Copyright © 2013-2016 [Kurento]. Licensed under [LGPL v2.1 License].
-
-kurento-composite-call
+kurento-dispatcher-demo
 ====================
 
 Kurento JavaScript Tutorial: WebRTC Dispatcher demo.
@@ -12,8 +8,8 @@ Running this tutorial
 
 In order to run this tutorial, please read the following instructions.
 
-git clone https://github.com/srigaurav1986/KurentoExample.git   
-cd KurentoExample   
+git clone https://github.com/raghavSrih/kurento-dispatcher-example.git  
+cd kurento-dispatcher-example   
 npm install  
 npm start  
 
@@ -22,24 +18,7 @@ If you have problems installing any of the dependencies, please remove them and 
 rm -r node_modules  
 npm cache clean  
 
-Access the application connecting to the URL http://localhost:8080/ through a WebRTC capable browser (Chrome, Firefox).
-
-Note
-
-These instructions work only if Kurento Media Server is up and running in the same machine than the tutorial. 
-Steps to run KMS 6.0 on Ubuntu 14.04 are :  
-
-echo "deb http://ubuntu.kurento.org trusty kms6" | sudo tee /etc/apt/sources.list.d/kurento.list  
-wget -O - http://ubuntu.kurento.org/kurento.gpg.key | sudo apt-key add -  
-sudo apt-get update  
-sudo apt-get install kurento-media-server-6.0  
-
-However, it is possible to locate the KMS in other machine simple adding the argument ws_uri to the npm execution command, as follows:
-
-npm start -- --ws_uri=ws://kms_host:kms_host:kms_port/kurento
-In this case you need to use npm version 2. To update it you can use this command:
-
-sudo npm install npm -g
+Access the application connecting to the URL https://localhost:8080/ through a WebRTC capable browser (Chrome, Firefox).
 
 
 What is Kurento
@@ -142,3 +121,7 @@ Before asking for support, please read first the [Kurento Netiquette Guidelines]
 [Open API specification]: http://kurento.github.io/doc-kurento/
 [apiary.io]: http://docs.streamoriented.apiary.io/
 [instructions]: http://www.kurento.org/docs/current/tutorials/node/tutorial-4-one2one.html
+
+[![][KurentoImage]][Kurento]
+
+Copyright © 2013-2016 [Kurento]. Licensed under [LGPL v2.1 License].
